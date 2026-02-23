@@ -1,0 +1,3 @@
+D:/daily/research/HKU_AIOT_2025-26/acoustic_floorplan/MediaController/AV-data-android-app/AVLiveness/app/.cxx/Debug/n6l545p2/x86_64/CMakeFiles/PreProcessAudio.dir
+D:/daily/research/HKU_AIOT_2025-26/acoustic_floorplan/MediaController/AV-data-android-app/AVLiveness/app/.cxx/Debug/n6l545p2/x86_64/CMakeFiles/edit_cache.dir
+D:/daily/research/HKU_AIOT_2025-26/acoustic_floorplan/MediaController/AV-data-android-app/AVLiveness/app/.cxx/Debug/n6l545p2/x86_64/CMakeFiles/rebuild_cache.dir
