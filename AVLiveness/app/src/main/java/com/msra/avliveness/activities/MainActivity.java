@@ -85,7 +85,6 @@ public class MainActivity extends AppCompatActivity {
     private static final String ROLE_DEPENDENT = "dependent";
     private static final String COMMAND_PLAYBACK = "Playback";
     private static final String COMMAND_RECORD = "Record";
-    private static final String COMMAND_STOP = "Stop";
     private static final String SETTINGS_NAME = "Settings";
     private static final String KEY_ROLE = "Role";
     private static final String KEY_AUDIO_TX_ENABLED = "AudioTxEnabled";
@@ -273,9 +272,6 @@ public class MainActivity extends AppCompatActivity {
         startEndButton.setOnClickListener(v -> {
             if (isStarted) {
                 Log.i("Button", "End Button Pressed");
-                if (ROLE_CONTROLLER.equals(role) && sessionControlledByMqtt) {
-                    sendRemoteStopCommandAsync();
-                }
                 setStartButtonIdle();
                 endAllThreads();
                 return;
@@ -651,22 +647,12 @@ public class MainActivity extends AppCompatActivity {
         if (command == null) {
             return;
         }
-        if (!COMMAND_PLAYBACK.equals(command) && !COMMAND_RECORD.equals(command) && !COMMAND_STOP.equals(command)) {
+        if (!COMMAND_PLAYBACK.equals(command) && !COMMAND_RECORD.equals(command)) {
             Log.w(TAG, "Ignore unsupported command: " + command);
             return;
         }
 
         publishAckAsync(command);
-        if (COMMAND_STOP.equals(command)) {
-            pendingRemoteCommand = null;
-            cancelPendingSessionStart();
-            if (isStarted) {
-                setStartButtonIdle();
-                endAllThreads();
-            }
-            return;
-        }
-
         pendingRemoteCommand = command;
         Log.i(TAG, "Pending remote command: " + pendingRemoteCommand);
     }
@@ -753,15 +739,6 @@ public class MainActivity extends AppCompatActivity {
                     localOperation,
                     true
             ));
-        });
-    }
-
-    private void sendRemoteStopCommandAsync() {
-        mqttExecutor.execute(() -> {
-            if (mqttSyncClient == null || !mqttSyncClient.isConnected()) {
-                return;
-            }
-            mqttSyncClient.publishCommandAndWaitAck(COMMAND_STOP, MQTT_ACK_TIMEOUT_MS);
         });
     }
 
@@ -1227,9 +1204,6 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
             Log.i(TAG, "Auto stop session after " + sessionDurationSeconds + " seconds.");
-            if (ROLE_CONTROLLER.equals(role) && sessionControlledByMqtt) {
-                sendRemoteStopCommandAsync();
-            }
             setStartButtonIdle();
             endAllThreads();
         };
