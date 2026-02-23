@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "/Users/ethan/study/lab/code/liveness/mobile/android/AVLiveness/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/ethan/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/ethan/study/lab/code/liveness/mobile/android/AVLiveness/app/.cxx/Debug/2z69m3z4/arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/ethan/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/ethan/study/lab/code/liveness/mobile/android/AVLiveness/app/.cxx/Debug/2z69m3z4/arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "PreProcessAudio::@6890427a1f51a3e7e1df": {
+      "artifactName": "PreProcessAudio",
+      "abi": "arm64-v8a",
+      "output": "/Users/ethan/study/lab/code/liveness/mobile/android/AVLiveness/app/build/intermediates/cxx/Debug/2z69m3z4/obj/arm64-v8a/libPreProcessAudio.so",
+      "runtimeFiles": []
+    }
+  }
+}

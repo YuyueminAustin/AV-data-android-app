@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Liveness Detection</string>
+    <string name="startendbutton">StartEndButton</string>
+</resources>

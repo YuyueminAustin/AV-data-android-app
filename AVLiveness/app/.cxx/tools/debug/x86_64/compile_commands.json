@@ -1,0 +1,7 @@
+[
+{
+  "directory": "D:/daily/research/HKU_AIOT_2025-26/acoustic_floorplan/MediaController/AV-data-android-app/AVLiveness/app/.cxx/Debug/3o342o5t/x86_64",
+  "command": "D:\\Installation\\andriod_sdk\\ndk\\26.1.10909125\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android24 --sysroot=D:/Installation/andriod_sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DPreProcessAudio_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\PreProcessAudio.dir\\PreProcessAudio.cpp.o -c D:\\daily\\research\\HKU_AIOT_2025-26\\acoustic_floorplan\\MediaController\\AV-data-android-app\\AVLiveness\\app\\src\\main\\cpp\\PreProcessAudio.cpp",
+  "file": "D:\\daily\\research\\HKU_AIOT_2025-26\\acoustic_floorplan\\MediaController\\AV-data-android-app\\AVLiveness\\app\\src\\main\\cpp\\PreProcessAudio.cpp"
+}
+]

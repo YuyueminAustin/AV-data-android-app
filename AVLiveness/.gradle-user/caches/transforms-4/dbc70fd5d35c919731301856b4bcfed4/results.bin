@@ -1,0 +1,3 @@
+o/.gradle-instrumented.marker
+o/instrumented/instrumented-module-intellij.libraries.gson.jar
+o/original/module-intellij.libraries.gson.jar

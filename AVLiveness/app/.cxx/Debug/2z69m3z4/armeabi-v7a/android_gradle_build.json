@@ -1,0 +1,38 @@
+{
+  "buildFiles": [
+    "/Users/ethan/study/lab/code/liveness/mobile/android/AVLiveness/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/ethan/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/ethan/study/lab/code/liveness/mobile/android/AVLiveness/app/.cxx/Debug/2z69m3z4/armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/ethan/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/ethan/study/lab/code/liveness/mobile/android/AVLiveness/app/.cxx/Debug/2z69m3z4/armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "PreProcessAudio::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "armeabi-v7a",
+      "artifactName": "PreProcessAudio",
+      "output": "/Users/ethan/study/lab/code/liveness/mobile/android/AVLiveness/app/build/intermediates/cxx/Debug/2z69m3z4/obj/armeabi-v7a/libPreProcessAudio.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/Users/ethan/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang.lld",
+      "cppCompilerExecutable": "/Users/ethan/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++.lld"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

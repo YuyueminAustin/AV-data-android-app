@@ -1,0 +1,183 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <!-- Row for checkboxes -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/checkBoxAudioTx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Audio Tx" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAudioRx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Audio Rx" />
+
+        <CheckBox
+            android:id="@+id/checkBoxVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Role"
+        android:paddingTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MQTT Host"
+        android:paddingTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextMqttHost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="localhost"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MQTT Port"
+        android:paddingTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextMqttPort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="1883"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Session Duration (s)"
+        android:paddingTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextSessionDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera Choice"
+        android:paddingTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Speaker Choice"
+        android:paddingTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerSpeaker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Microphone Choice"
+        android:paddingTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerMicrophone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPlayFromFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play From File"
+        android:paddingTop="16dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSignalLoop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loop Signal"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idle Between Loops (s)"
+        android:paddingTop="8dp" />
+
+    <EditText
+        android:id="@+id/editTextSignalIdleSeconds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="1.0"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play File Choice"
+        android:paddingTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experiment Name"
+        android:paddingTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextExperimentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter experiment name" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save and Return"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>

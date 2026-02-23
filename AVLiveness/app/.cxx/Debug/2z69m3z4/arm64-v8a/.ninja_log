@@ -1,0 +1,5 @@
+# ninja log v5
+53	113	1720685798531018477	/Users/ethan/study/lab/code/liveness/mobile/android/AVLiveness/app/build/intermediates/cxx/Debug/2z69m3z4/obj/arm64-v8a/libavliveness.so	e6cd36c9210dbef4
+0	50	1720685798466596624	CMakeFiles/avliveness.dir/avliveness.cpp.o	a2b192fbb776eca1
+0	1085	1721025226146979071	CMakeFiles/PreProcessAudio.dir/PreProcessAudio.cpp.o	bb760184c6ba7121
+1086	1392	1721025226427906498	/Users/ethan/study/lab/code/liveness/mobile/android/AVLiveness/app/build/intermediates/cxx/Debug/2z69m3z4/obj/arm64-v8a/libPreProcessAudio.so	3b8f3cc08b805e85

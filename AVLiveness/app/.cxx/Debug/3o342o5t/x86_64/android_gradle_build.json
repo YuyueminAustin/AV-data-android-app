@@ -1,0 +1,38 @@
+{
+  "buildFiles": [
+    "D:\\daily\\research\\HKU_AIOT_2025-26\\acoustic_floorplan\\MediaController\\AV-data-android-app\\AVLiveness\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "D:\\Installation\\andriod_sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "D:\\daily\\research\\HKU_AIOT_2025-26\\acoustic_floorplan\\MediaController\\AV-data-android-app\\AVLiveness\\app\\.cxx\\Debug\\3o342o5t\\x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "D:\\Installation\\andriod_sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "D:\\daily\\research\\HKU_AIOT_2025-26\\acoustic_floorplan\\MediaController\\AV-data-android-app\\AVLiveness\\app\\.cxx\\Debug\\3o342o5t\\x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "PreProcessAudio::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "x86_64",
+      "artifactName": "PreProcessAudio",
+      "output": "D:\\daily\\research\\HKU_AIOT_2025-26\\acoustic_floorplan\\MediaController\\AV-data-android-app\\AVLiveness\\app\\build\\intermediates\\cxx\\Debug\\3o342o5t\\obj\\x86_64\\libPreProcessAudio.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "D:\\Installation\\andriod_sdk\\ndk\\26.1.10909125\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "D:\\Installation\\andriod_sdk\\ndk\\26.1.10909125\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}
